@@ -1,0 +1,4 @@
+https://www.w3schools.com/php/php_arrays_associative.asp
+https://www.w3schools.com/php/php_mysql_select.asp
+https://www.w3schools.com/xml/ajax_xmlhttprequest_send.asp
+https://www.w3schools.com/php/php_ajax_php.asp
