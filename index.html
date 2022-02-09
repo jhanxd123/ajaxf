@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <h1 id="con"></h1>
+  </body>
+  <script type="text/javascript">
+    function ajaxSample() {
+      const conn = new XMLHttpRequest;
+      conn.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          // document.getElementById("con").innerHTML = this.responseText;
+          // console.log(JSON.parse(this.responseText))
+          var jsons = JSON.parse(this.responseText);
+          console.log(jsons[0].name);
+        }
+      }
+      conn.open("POST", "./server.php", true);
+      // conn.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      conn.send();
+    }
+
+    ajaxSample();
+  </script>
+</html>
